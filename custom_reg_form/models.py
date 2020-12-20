@@ -21,12 +21,10 @@ class ExtraInfo(models.Model):
     favorite_movie = models.CharField(
         verbose_name="Fav Flick",
         max_length=100,
-        on_delete=models.PROTECT,
     )
     favorite_editor = models.CharField(
         verbose_name="Favorite Editor",
         choices=FAVORITE_EDITOR,
         blank=True, 
         max_length=5,
-        on_delete=models.PROTECT,
     )
